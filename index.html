@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="icon" href="./images/globe-solid.svg" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>BookShelter</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="books__header">
+      <div class="container">
+        <div class="books__header-wrapper">
+          <a class="books__header-logo" href="#">
+            <img class="books__header-logo-img" src="./images/books-logo.svg" alt="" width="226" height="44"/>
+          </a>
+
+          <div class="input-group search__input-wrap">
+            <span class="input-group-text search__input-icon" id="basic-addon1">
+              <img src="./images/search-icon.svg" alt=""  width="19" height="19px"/>
+            </span>
+
+            <input type="text" class="form-control search__input" placeholder="Search books" aria-label="Search books" aria-describedby="basic-addon1"/>
+          </div>
+
+          <button type="button" class="btn btn-primary book__logout-btn">
+            Logout
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="books__main">
+      <section class="books__main-top">
+        <div class="container">
+          <div class="books__header-bottom">
+            <p class="books__total-result">
+              Showing <span class="books__total-resul-num">0</span> Result(s)
+            </p>
+            <button class="books__order-btn btn btn-secondary">
+              <img class="books__order-btn-img"  src="./images/calendar-icon.svg" alt="" width="24" height="24"/>Order by newest
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="books__main-bottom">
+        <div class="container books__main-bottom-wrap">
+          <div class="main__left">
+            <h3 class="main__left-heading">Bookmarks</h3>
+            <p class="main__left-decs">
+              If you don’t like to read, you haven’t found the right book
+            </p>
+
+            <ul class="bookmark__list"></ul>
+          </div>
+          <div class="main__right">
+            <ul class="card__list"></ul>
+            <div class="pagenation__list-wrap">
+              <button class="btn btn-outline-info prev__btn">&laquo;</button>
+              <ul class="pagenation__list">
+              </ul>
+              <button class="btn btn-outline-info next__btn">&raquo;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="books__footer"></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+    </script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
